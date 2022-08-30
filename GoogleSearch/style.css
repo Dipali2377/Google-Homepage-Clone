@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 60px;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+.navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+.navbar ul li {
+  margin-left: 15px;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.circle-shadow {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.circle-shadow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menus-icon,
+.user-icon span {
+  font-size: 18px;
+}
+.users-icon {
+  background-color: rgb(236, 112, 236);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+.users-icon span {
+  color: white;
+}
+
+/* This is the styling of the content section */
+.middle-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.logo-img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  border: 1px solid gray;
+  width: 600px;
+  height: 45px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.search-icon:hover {
+  box-shadow: 0px 0px 4px 0px #858585;
+}
+.search-icon i {
+  font-size: 18px;
+  color: gray;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.search-icon input {
+  flex-grow: 1;
+  height: 30px;
+  margin-right: 15px;
+  font-size: 16px;
+  border: none;
+}
+
+.search-icon input:focus {
+  outline: none;
+}
+
+.search-btn {
+  margin-top: 20px;
+}
+.search-btn button {
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.search-btn button:hover {
+  border: 1px solid lightgray;
+}
+
+.google-search-btn {
+  width: 120px;
+}
+.lucky-search-button {
+  width: 140px;
+}
+.offered-languages {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.offered-languages p a {
+  color: blue;
+}
+.offered-languages p a:hover {
+  text-decoration: underline;
+}
+
+/* This is the styling of the footer section */
+
+.footer {
+  background-color: #f2f2f2;
+  height: 100px;
+}
+.footer-contents {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.upper-footer {
+  height: 50%;
+  border-bottom: 1px solid lightgray;
+}
+.upper-footer p {
+  color: gray;
+  font-size: 14px;
+}
+.lower-footer {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.lower-footer ul li a {
+  font-size: 14px;
+  color: gray;
+}
+
+.lower-footer ul li a:hover {
+  text-decoration: underline;
+}
+.lower-left-footer {
+  display: flex;
+}
+.lower-left-footer li {
+  margin-right: 15px;
+}
+
+.lower-right-footer {
+  display: flex;
+}
+.lower-right-footer li {
+  margin-left: 15px;
+}
+
+/* Responsiveness for mobile and tablet view */
+
+@media only screen and(max-width: 650px) {
+  /* for search bar */
+  .search-icon {
+    width: 90px;
+  }
+  /* for the footer */
+  footer {
+    height: 150px;
+  }
+  /* for upper footer */
+  .upper-footer {
+    height: 50px;
+  }
+  /* for lower footer */
+  .lower-footer {
+    height: 100px;
+    flex-direction: column;
+  }
+}
